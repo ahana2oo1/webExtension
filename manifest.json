@@ -1,0 +1,18 @@
+{
+
+    "description": "Removes Reels from instagram and Shorts from Youtube",
+    "manifest_version": 3,
+    "name": "ReelsRid",
+    "version": "2.0",
+    "icons": {
+      "48": "icons/icon-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://www.instagram.com/reels/*", "*://www.instagram.com/*","*://www.youtube.com/*","*://www.youtube.com/shorts/*"],
+        "js": ["remove.js"]
+      }
+    ]
+  
+  }
